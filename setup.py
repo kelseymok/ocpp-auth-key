@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setup(
     name='ocpp_auth_key',
     version='0.1.0',
@@ -7,5 +10,6 @@ setup(
     author='Kelsey Mok',
     author_email='kelseymok@gmail.com',
     url='https://github.com/kelseymok/ocpp-auth-key',
-    packages=find_packages(exclude=('tests'))
+    packages=find_packages(exclude=('tests')),
+    install_requirements=required
 )
