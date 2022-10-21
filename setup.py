@@ -9,7 +9,7 @@ setup(
     description='OCPP AuthKey',
     author='Kelsey Mok',
     author_email='kelseymok@gmail.com',
-    url='https://github.com/kelseymok/ocpp-auth-key',
+    url='https://github.com/kelseymok/ocpp_auth_key',
     packages=find_packages(exclude=('tests')),
     install_requirements=required
 )
