@@ -13,7 +13,7 @@ setup(
     author='Kelsey Mok',
     author_email='kelseymok@gmail.com',
     url='https://github.com/kelseymok/ocpp_auth_key',
-    packages=find_packages(exclude=('tests')),
+    packages=find_packages('src', exclude=('tests')),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
     install_requirements=required
